@@ -53,10 +53,10 @@ RM = /nix/store/q6d4p3var9b60wjc1xw8id3g2z11k46s-cmake-4.1.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project
+CMAKE_SOURCE_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build
+CMAKE_BINARY_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/laser.dir/depend.make
@@ -73,214 +73,214 @@ CMakeFiles/laser.dir/codegen:
 .PHONY : CMakeFiles/laser.dir/codegen
 
 CMakeFiles/laser.dir/laser.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/laser.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/laser.cc
+CMakeFiles/laser.dir/laser.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/laser.cc
 CMakeFiles/laser.dir/laser.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/laser.dir/laser.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/laser.cc.o -MF CMakeFiles/laser.dir/laser.cc.o.d -o CMakeFiles/laser.dir/laser.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/laser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/laser.dir/laser.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/laser.cc.o -MF CMakeFiles/laser.dir/laser.cc.o.d -o CMakeFiles/laser.dir/laser.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/laser.cc
 
 CMakeFiles/laser.dir/laser.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/laser.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/laser.cc > CMakeFiles/laser.dir/laser.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/laser.cc > CMakeFiles/laser.dir/laser.cc.i
 
 CMakeFiles/laser.dir/laser.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/laser.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/laser.cc -o CMakeFiles/laser.dir/laser.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/laser.cc -o CMakeFiles/laser.dir/laser.cc.s
 
 CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionInitialization.cc
+CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionInitialization.cc
 CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o -MF CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o.d -o CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o -MF CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o.d -o CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionInitialization.cc
 
 CMakeFiles/laser.dir/src/LaserActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserActionInitialization.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionInitialization.cc > CMakeFiles/laser.dir/src/LaserActionInitialization.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionInitialization.cc > CMakeFiles/laser.dir/src/LaserActionInitialization.cc.i
 
 CMakeFiles/laser.dir/src/LaserActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserActionInitialization.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionInitialization.cc -o CMakeFiles/laser.dir/src/LaserActionInitialization.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionInitialization.cc -o CMakeFiles/laser.dir/src/LaserActionInitialization.cc.s
 
 CMakeFiles/laser.dir/src/LaserActionManager.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserActionManager.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionManager.cc
+CMakeFiles/laser.dir/src/LaserActionManager.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionManager.cc
 CMakeFiles/laser.dir/src/LaserActionManager.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/laser.dir/src/LaserActionManager.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserActionManager.cc.o -MF CMakeFiles/laser.dir/src/LaserActionManager.cc.o.d -o CMakeFiles/laser.dir/src/LaserActionManager.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionManager.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/laser.dir/src/LaserActionManager.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserActionManager.cc.o -MF CMakeFiles/laser.dir/src/LaserActionManager.cc.o.d -o CMakeFiles/laser.dir/src/LaserActionManager.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionManager.cc
 
 CMakeFiles/laser.dir/src/LaserActionManager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserActionManager.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionManager.cc > CMakeFiles/laser.dir/src/LaserActionManager.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionManager.cc > CMakeFiles/laser.dir/src/LaserActionManager.cc.i
 
 CMakeFiles/laser.dir/src/LaserActionManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserActionManager.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionManager.cc -o CMakeFiles/laser.dir/src/LaserActionManager.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionManager.cc -o CMakeFiles/laser.dir/src/LaserActionManager.cc.s
 
 CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorConstruction.cc
+CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorConstruction.cc
 CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o -MF CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o.d -o CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o -MF CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o.d -o CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorConstruction.cc
 
 CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorConstruction.cc > CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorConstruction.cc > CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.i
 
 CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorConstruction.cc -o CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorConstruction.cc -o CMakeFiles/laser.dir/src/LaserDetectorConstruction.cc.s
 
 CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorSD.cc
+CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorSD.cc
 CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o -MF CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o.d -o CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o -MF CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o.d -o CMakeFiles/laser.dir/src/LaserDetectorSD.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorSD.cc
 
 CMakeFiles/laser.dir/src/LaserDetectorSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserDetectorSD.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorSD.cc > CMakeFiles/laser.dir/src/LaserDetectorSD.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorSD.cc > CMakeFiles/laser.dir/src/LaserDetectorSD.cc.i
 
 CMakeFiles/laser.dir/src/LaserDetectorSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserDetectorSD.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserDetectorSD.cc -o CMakeFiles/laser.dir/src/LaserDetectorSD.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserDetectorSD.cc -o CMakeFiles/laser.dir/src/LaserDetectorSD.cc.s
 
 CMakeFiles/laser.dir/src/LaserEventAction.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserEventAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserEventAction.cc
+CMakeFiles/laser.dir/src/LaserEventAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserEventAction.cc
 CMakeFiles/laser.dir/src/LaserEventAction.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/laser.dir/src/LaserEventAction.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserEventAction.cc.o -MF CMakeFiles/laser.dir/src/LaserEventAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserEventAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserEventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/laser.dir/src/LaserEventAction.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserEventAction.cc.o -MF CMakeFiles/laser.dir/src/LaserEventAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserEventAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserEventAction.cc
 
 CMakeFiles/laser.dir/src/LaserEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserEventAction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserEventAction.cc > CMakeFiles/laser.dir/src/LaserEventAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserEventAction.cc > CMakeFiles/laser.dir/src/LaserEventAction.cc.i
 
 CMakeFiles/laser.dir/src/LaserEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserEventAction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserEventAction.cc -o CMakeFiles/laser.dir/src/LaserEventAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserEventAction.cc -o CMakeFiles/laser.dir/src/LaserEventAction.cc.s
 
 CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserMaterialsDefinition.cc
+CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserMaterialsDefinition.cc
 CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o -MF CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o.d -o CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserMaterialsDefinition.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o -MF CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o.d -o CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserMaterialsDefinition.cc
 
 CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserMaterialsDefinition.cc > CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserMaterialsDefinition.cc > CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.i
 
 CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserMaterialsDefinition.cc -o CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserMaterialsDefinition.cc -o CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.s
 
 CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalPropertiesMessenger.cc
+CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalPropertiesMessenger.cc
 CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalPropertiesMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalPropertiesMessenger.cc
 
 CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalPropertiesMessenger.cc > CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalPropertiesMessenger.cc > CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.i
 
 CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalPropertiesMessenger.cc -o CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalPropertiesMessenger.cc -o CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.s
 
 CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalSurfaceMessenger.cc
+CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalSurfaceMessenger.cc
 CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalSurfaceMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalSurfaceMessenger.cc
 
 CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalSurfaceMessenger.cc > CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalSurfaceMessenger.cc > CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.i
 
 CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalSurfaceMessenger.cc -o CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalSurfaceMessenger.cc -o CMakeFiles/laser.dir/src/LaserOpticalSurfaceMessenger.cc.s
 
 CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserParticleGunMessenger.cc
+CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserParticleGunMessenger.cc
 CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserParticleGunMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o -MF CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o.d -o CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserParticleGunMessenger.cc
 
 CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserParticleGunMessenger.cc > CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserParticleGunMessenger.cc > CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.i
 
 CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserParticleGunMessenger.cc -o CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserParticleGunMessenger.cc -o CMakeFiles/laser.dir/src/LaserParticleGunMessenger.cc.s
 
 CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPhysicsList.cc
+CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPhysicsList.cc
 CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o -MF CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o.d -o CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o -MF CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o.d -o CMakeFiles/laser.dir/src/LaserPhysicsList.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPhysicsList.cc
 
 CMakeFiles/laser.dir/src/LaserPhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserPhysicsList.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPhysicsList.cc > CMakeFiles/laser.dir/src/LaserPhysicsList.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPhysicsList.cc > CMakeFiles/laser.dir/src/LaserPhysicsList.cc.i
 
 CMakeFiles/laser.dir/src/LaserPhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserPhysicsList.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPhysicsList.cc -o CMakeFiles/laser.dir/src/LaserPhysicsList.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPhysicsList.cc -o CMakeFiles/laser.dir/src/LaserPhysicsList.cc.s
 
 CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPrimaryGeneratorAction.cc
+CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPrimaryGeneratorAction.cc
 CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o -MF CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o -MF CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPrimaryGeneratorAction.cc
 
 CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPrimaryGeneratorAction.cc > CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPrimaryGeneratorAction.cc > CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.i
 
 CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPrimaryGeneratorAction.cc -o CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPrimaryGeneratorAction.cc -o CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.s
 
 CMakeFiles/laser.dir/src/LaserRun.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserRun.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRun.cc
+CMakeFiles/laser.dir/src/LaserRun.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRun.cc
 CMakeFiles/laser.dir/src/LaserRun.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/laser.dir/src/LaserRun.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserRun.cc.o -MF CMakeFiles/laser.dir/src/LaserRun.cc.o.d -o CMakeFiles/laser.dir/src/LaserRun.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRun.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/laser.dir/src/LaserRun.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserRun.cc.o -MF CMakeFiles/laser.dir/src/LaserRun.cc.o.d -o CMakeFiles/laser.dir/src/LaserRun.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRun.cc
 
 CMakeFiles/laser.dir/src/LaserRun.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserRun.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRun.cc > CMakeFiles/laser.dir/src/LaserRun.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRun.cc > CMakeFiles/laser.dir/src/LaserRun.cc.i
 
 CMakeFiles/laser.dir/src/LaserRun.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserRun.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRun.cc -o CMakeFiles/laser.dir/src/LaserRun.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRun.cc -o CMakeFiles/laser.dir/src/LaserRun.cc.s
 
 CMakeFiles/laser.dir/src/LaserRunAction.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserRunAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRunAction.cc
+CMakeFiles/laser.dir/src/LaserRunAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRunAction.cc
 CMakeFiles/laser.dir/src/LaserRunAction.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/laser.dir/src/LaserRunAction.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserRunAction.cc.o -MF CMakeFiles/laser.dir/src/LaserRunAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserRunAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/laser.dir/src/LaserRunAction.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserRunAction.cc.o -MF CMakeFiles/laser.dir/src/LaserRunAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserRunAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRunAction.cc
 
 CMakeFiles/laser.dir/src/LaserRunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserRunAction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRunAction.cc > CMakeFiles/laser.dir/src/LaserRunAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRunAction.cc > CMakeFiles/laser.dir/src/LaserRunAction.cc.i
 
 CMakeFiles/laser.dir/src/LaserRunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserRunAction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRunAction.cc -o CMakeFiles/laser.dir/src/LaserRunAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRunAction.cc -o CMakeFiles/laser.dir/src/LaserRunAction.cc.s
 
 CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: CMakeFiles/laser.dir/flags.make
-CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserSteppingAction.cc
+CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserSteppingAction.cc
 CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: CMakeFiles/laser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o -MF CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserSteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o -MF CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o.d -o CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o -c /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserSteppingAction.cc
 
 CMakeFiles/laser.dir/src/LaserSteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/laser.dir/src/LaserSteppingAction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserSteppingAction.cc > CMakeFiles/laser.dir/src/LaserSteppingAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserSteppingAction.cc > CMakeFiles/laser.dir/src/LaserSteppingAction.cc.i
 
 CMakeFiles/laser.dir/src/LaserSteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/laser.dir/src/LaserSteppingAction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserSteppingAction.cc -o CMakeFiles/laser.dir/src/LaserSteppingAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserSteppingAction.cc -o CMakeFiles/laser.dir/src/LaserSteppingAction.cc.s
 
 # Object files for target laser
 laser_OBJECTS = \
@@ -377,7 +377,7 @@ laser: /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/lib/libG4global
 laser: /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/lib/libG4ptl.3.0.0.dylib
 laser: /nix/store/cqihxj7x6f05hhpqbzbn8g9mdgyfhg7l-clhep-2.4.7.1/lib/libCLHEP-2.4.7.1.dylib
 laser: CMakeFiles/laser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable laser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable laser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/laser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -389,5 +389,6 @@ CMakeFiles/laser.dir/clean:
 .PHONY : CMakeFiles/laser.dir/clean
 
 CMakeFiles/laser.dir/depend:
-	cd /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles/laser.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/laser.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/laser.dir/depend
+

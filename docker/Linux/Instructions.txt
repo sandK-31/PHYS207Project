@@ -1,0 +1,4 @@
+sudo docker build -t ansg-env -f Dockerfile .
+xhost +local:docker
+xhost +SI:localusr:root
+sudo docker run -it -e DISPLAY=$DISPLAY -v ./workspace:/workspace -v /tmp/.X11-unix:/tmp/.X11-unix:rw --name ansg ansg-env

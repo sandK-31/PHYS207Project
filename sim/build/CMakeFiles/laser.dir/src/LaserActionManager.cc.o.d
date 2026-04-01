@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserActionManager.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserActionManager.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserActionManager.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserActionManager.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserActionManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/globals.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ios.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Types.hh \

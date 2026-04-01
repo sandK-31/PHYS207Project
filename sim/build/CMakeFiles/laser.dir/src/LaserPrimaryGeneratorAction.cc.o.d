@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserPrimaryGeneratorAction.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserPrimaryGeneratorAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserPrimaryGeneratorAction.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserPrimaryGeneratorAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4DataVector.hh \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/fstream \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/__algorithm/max.h \
@@ -916,7 +916,7 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AllocatorPool.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PrimaryParticle.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ParticleMomentum.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserRunAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserRunAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Accumulable.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccValue.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VAccumulable.hh \
@@ -925,7 +925,7 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VAccumulable.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccValue.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UserRunAction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserAnalysis.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserAnalysis.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnalysisManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericAnalysisManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -992,8 +992,8 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericAnalysisManager.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericFileManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericFileManager.icc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserDetectorConstruction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserDetectorSD.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserDetectorConstruction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserDetectorSD.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VSensitiveDetector.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4CollectionNameVector.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4HCofThisEvent.hh \
@@ -1087,9 +1087,9 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VReadOutGeometry.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SensitiveVolumeList.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VSDFilter.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserEventAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserEventAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UserEventAction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserActionManager.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserActionManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccumulableManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccumulableManager.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccArray.hh \
@@ -1179,7 +1179,7 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SDStructure.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SystemOfUnits.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4WorkerThread.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserRun.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserRun.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Run.hh \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/numeric \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/__numeric/accumulate.h \
@@ -1329,7 +1329,7 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyType.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PVPlacement.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserMaterialsDefinition.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserMaterialsDefinition.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ICRU90StoppingData.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistElementBuilder.hh \
@@ -1345,8 +1345,8 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Physics2DVector.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SurfaceProperty.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PhysicalConstants.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalSurfaceMessenger.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalPropertiesMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalSurfaceMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalPropertiesMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Box.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GeomTypes.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GeomConfig.hh \
@@ -1443,4 +1443,4 @@ CMakeFiles/laser.dir/src/LaserPrimaryGeneratorAction.cc.o: \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/TRandom.h \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/Math/TRandomEngine.h \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/TNamed.h \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserParticleGunMessenger.hh
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserParticleGunMessenger.hh

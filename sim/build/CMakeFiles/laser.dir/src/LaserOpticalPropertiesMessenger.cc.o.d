@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserOpticalPropertiesMessenger.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalPropertiesMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserOpticalPropertiesMessenger.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalPropertiesMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyMethod.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Types.hh \
@@ -853,7 +853,7 @@ CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: \
   /nix/store/cqihxj7x6f05hhpqbzbn8g9mdgyfhg7l-clhep-2.4.7.1/include/CLHEP/Units/defs.h \
   /nix/store/cqihxj7x6f05hhpqbzbn8g9mdgyfhg7l-clhep-2.4.7.1/include/CLHEP/Units/SystemOfUnits.h \
   /nix/store/c74i8wsk4xsrawilhw41v6zpqkf94rqh-apple-sdk-14.4/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserMaterialsDefinition.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserMaterialsDefinition.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ICRU90StoppingData.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistElementBuilder.hh \
@@ -913,4 +913,4 @@ CMakeFiles/laser.dir/src/LaserOpticalPropertiesMessenger.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SurfaceProperty.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PhysicalConstants.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SystemOfUnits.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalSurfaceMessenger.hh
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalSurfaceMessenger.hh

@@ -1,5 +1,4 @@
-file(
-  REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/laser.dir/laser.cc.o"
   "CMakeFiles/laser.dir/laser.cc.o.d"
   "CMakeFiles/laser.dir/src/LaserActionInitialization.cc.o"
@@ -31,7 +30,8 @@ file(
   "CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o"
   "CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o.d"
   "laser"
-  "laser.pdb")
+  "laser.pdb"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)

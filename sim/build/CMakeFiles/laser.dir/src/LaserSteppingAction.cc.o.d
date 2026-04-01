@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserSteppingAction.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserSteppingAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserSteppingAction.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserSteppingAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SteppingManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4LogicalVolume.hh \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/vector \
@@ -1043,9 +1043,9 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UserSteppingAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VSteppingVerbose.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/trkgdefs.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserActionManager.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserDetectorConstruction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserDetectorSD.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserActionManager.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserDetectorConstruction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserDetectorSD.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VSensitiveDetector.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4CollectionNameVector.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4HCofThisEvent.hh \
@@ -1054,7 +1054,7 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VReadOutGeometry.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SensitiveVolumeList.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VSDFilter.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserAnalysis.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserAnalysis.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnalysisManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericAnalysisManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -1121,9 +1121,9 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericAnalysisManager.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericFileManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericFileManager.icc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserEventAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserEventAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UserEventAction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserRunAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserRunAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Accumulable.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccValue.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VAccumulable.hh \
@@ -1132,7 +1132,7 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VAccumulable.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccValue.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UserRunAction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserPrimaryGeneratorAction.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserPrimaryGeneratorAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ParticleGun.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VPrimaryGenerator.hh \
@@ -1212,11 +1212,11 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/TString.h \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/TMathBase.h \
   /nix/store/dkdnxbbs18b1566500kswicqd1ckfdp9-root-6.36.04/include/ROOT/TypeTraits.hxx \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserParticleGunMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserParticleGunMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyMethod.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyType.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserRun.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserRun.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Run.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccumulableManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AccumulableManager.icc \
@@ -1380,7 +1380,7 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4HadXSTypes.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PVPlacement.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4VUserDetectorConstruction.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserMaterialsDefinition.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserMaterialsDefinition.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistManager.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ICRU90StoppingData.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4NistElementBuilder.hh \
@@ -1396,8 +1396,8 @@ CMakeFiles/laser.dir/src/LaserSteppingAction.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Physics2DVector.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SurfaceProperty.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PhysicalConstants.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalSurfaceMessenger.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalPropertiesMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalSurfaceMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalPropertiesMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Cons.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Cons.icc \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Orb.hh \

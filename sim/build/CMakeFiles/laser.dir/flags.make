@@ -4,8 +4,9 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DG4ANALYSIS_USE_ROOT -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtCore -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/./mkspecs/macx-clang -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtGui -isystem /nix/store/c74i8wsk4xsrawilhw41v6zpqkf94rqh-apple-sdk-14.4/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtWidgets
+CXX_INCLUDES = -I/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtCore -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/./mkspecs/macx-clang -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtGui -isystem /nix/store/c74i8wsk4xsrawilhw41v6zpqkf94rqh-apple-sdk-14.4/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /nix/store/l657csld000yxbs5kygpqca70igdd1qa-qtbase-5.15.18-dev/include/QtWidgets
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /nix/store/c74i8wsk4xsrawilhw41v6zpqkf94rqh-apple-sdk-14.4/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=14.0 -fPIC
 
 CXX_FLAGS = -std=gnu++17 -arch arm64 -isysroot /nix/store/c74i8wsk4xsrawilhw41v6zpqkf94rqh-apple-sdk-14.4/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=14.0 -fPIC
+

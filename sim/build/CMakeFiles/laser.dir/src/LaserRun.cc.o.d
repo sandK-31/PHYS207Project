@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserRun.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserRun.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserRun.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserRun.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserRun.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AutoLock.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Threading.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Types.hh \

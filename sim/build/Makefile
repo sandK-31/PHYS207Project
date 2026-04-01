@@ -57,10 +57,10 @@ RM = /nix/store/q6d4p3var9b60wjc1xw8id3g2z11k46s-cmake-4.1.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project
+CMAKE_SOURCE_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build
+CMAKE_BINARY_DIR = /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -605,3 +605,4 @@ help:
 cmake_check_build_system:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
+

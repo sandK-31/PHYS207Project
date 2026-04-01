@@ -1,6 +1,6 @@
 CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/src/LaserMaterialsDefinition.cc \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserMaterialsDefinition.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/src/LaserMaterialsDefinition.cc \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserMaterialsDefinition.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4Element.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4ElementTable.hh \
   /nix/store/fhwhm442f88wrai1z9106xmw9irxidvk-libcxx-19.1.2+apple-sdk-15.5/include/c++/v1/vector \
@@ -904,7 +904,7 @@ CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SurfaceProperty.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4PhysicalConstants.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4SystemOfUnits.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalSurfaceMessenger.hh \
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalSurfaceMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4GenericMessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyMethod.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4AnyType.hh \
@@ -913,4 +913,4 @@ CMakeFiles/laser.dir/src/LaserMaterialsDefinition.cc.o: \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UIparameter.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UImessenger.hh \
   /nix/store/hjn29zj4c3y6lg8zqk40ksydfzzi13wc-geant4-11.3.2/include/Geant4/G4UIdirectory.hh \
-  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/include/LaserOpticalPropertiesMessenger.hh
+  /Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/include/LaserOpticalPropertiesMessenger.hh
