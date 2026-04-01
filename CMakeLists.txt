@@ -5,8 +5,8 @@ set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 # "/home/sanderk/.conda/pkgs/gxx-13.3.0-h9576a4e_2/bin/g++")
 project(WLS_ML_cube)
 set(CMAKE_CXX_STANDARD 17)
-include(FindROOT.cmake)
-include(FindGeant4.cmake)
+include(./cmake/FindROOT.cmake)
+include(./cmake/FindGeant4.cmake)
 
 find_package(Geant4 REQUIRED)
 find_package(ROOT REQUIRED)
@@ -55,9 +55,9 @@ target_link_libraries(laser ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 # fission. This is so that we can run the executable directly because it relies
 # on these scripts being in the current working directory.
 #
-set(my_SCRIPTS vis.mac init_vis.mac run1.mac)
+set(my_SCRIPTS macros/vis.mac macros/init_vis.mac macros/run1.mac)
 
-file(GLOB_RECURSE MACRO_FILES "*.mac" "*.txt")
+file(GLOB_RECURSE MACRO_FILES "macros/*.mac" "*.txt")
 
 file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
@@ -66,4 +66,19 @@ foreach(_script ${my_SCRIPTS})
                  ${PROJECT_BINARY_DIR}/${_script} COPYONLY)
 endforeach()
 
-install(TARGETS laser DESTINATION .)
+configure_file(${CMAKE_SOURCE_DIR}/cmake/setup.sh.in
+               ${CMAKE_BINARY_DIR}/setup.sh @ONLY)
+
+file(
+  CHMOD
+  ${CMAKE_BINARY_DIR}/setup.sh
+  PERMISSIONS
+  OWNER_READ
+  OWNER_WRITE
+  OWNER_EXECUTE
+  GROUP_READ
+  GROUP_EXECUTE
+  WORLD_READ
+  WORLD_EXECUTE)
+
+install(TARGETS laser DESTINATION ${CMAKE_BINARY_DIR})

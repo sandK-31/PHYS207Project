@@ -217,7 +217,7 @@ int main(int argc, char **argv) {
     G4UImanager *UImanager = G4UImanager::GetUIpointer();
 
     if (ui) {
-      UImanager->ApplyCommand("/control/execute vis.mac");
+      UImanager->ApplyCommand("/control/execute macros/vis.mac");
       ui->SessionStart();
       delete ui;
     } else {
