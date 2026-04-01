@@ -1,0 +1,49 @@
+repos:
+  # Core pre-commit hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=5000"]
+      - id: detect-private-key
+      - id: trailing-whitespace
+        exclude: |
+          (^README\.md$)
+
+  # Black — Python formatter
+  - repo: https://github.com/psf/black
+    rev: 24.2.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  # Flake8 — Python linting
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+
+  # CMake formatting
+  - repo: https://github.com/cheshirekow/cmake-format-precommit
+    rev: v0.6.10
+    hooks:
+      - id: cmake-format
+        exclude: (^\.vscode/)|(^NERS570Project/\.vscode/)|(^NERS570Project/\.devcontainer/devcontainer\.json$)
+  # LLVM formatting (clang-format)
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v17.0.6
+    hooks:
+      - id: clang-format
+        exclude: (^\.vscode/)|(^NERS570Project/\.vscode/)|(^NERS570Project/\.devcontainer/devcontainer\.json$)
+  # Prettier for markdown/json/yaml
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        types_or: [markdown, json, yaml]
+        exclude: (^\.vscode/)|(^NERS570Project/\.vscode/)|(^NERS570Project/\.devcontainer/devcontainer\.json$)

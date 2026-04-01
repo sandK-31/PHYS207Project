@@ -1,0 +1,5 @@
+/generator/Wavelength 407
+/generator/Angle 0
+/opticprops/IntralipidRayleighScatlength .5
+/opticprops/IntralipidAbslength 1000
+/opticprops/IntralipidRindex 1.3

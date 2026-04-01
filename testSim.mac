@@ -1,0 +1,31 @@
+# Pure Skim:
+# S: 0.15 cm
+# A: 4.34 cm
+# -----------
+# 50% Skim:
+# S: 0.31 cm
+# A: 8.70 cm
+# -----------
+# 25% Skim:
+# S: 0.62 cm
+# A: 17.39 cm
+# -----------
+# 12.5% Skim:
+# S: 1.23 cm
+# A: 34.78 cm
+# -----------
+#
+#
+
+/generator/Wavelength 633
+/generator/Angle 0
+#/generator/PolarizationX 0
+#/generator/PolarizationY 1
+#/generator/PolarizationZ 0
+/opticprops/IntralipidRayleighScatlength 5
+/opticprops/IntralipidAbslength 100
+/opticprops/IntralipidRindex 1.3
+#/opticprops/IntralipidMieScatlength 5
+#/opticprops/IntralipidMieForwardG 0.01
+#/opticprops/IntralipidMieBackwardG 0.01
+#/opticprops/IntralipidMieFBRatioG 0.95
