@@ -1,5 +1,4 @@
-/build/
-/testing/
+build/
 /CMakeLists.txt/
 /.vscode
 /.DS_Store
