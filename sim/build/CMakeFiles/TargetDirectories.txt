@@ -1,7 +1,0 @@
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/laser.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/edit_cache.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/rebuild_cache.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/list_install_components.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/install.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/install/local.dir
-/Users/sanderkatz/Documents/UCBResearch/code/C++/PHYS207Project/sim/build/CMakeFiles/install/strip.dir
