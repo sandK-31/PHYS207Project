@@ -47,8 +47,8 @@ endif()
 # ----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(laser laser.cc ${sources} ${headers})
-target_link_libraries(laser ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
+add_executable(space space.cc ${sources} ${headers})
+target_link_libraries(space ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 
 # ----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we build
@@ -81,4 +81,4 @@ file(
   WORLD_READ
   WORLD_EXECUTE)
 
-install(TARGETS laser DESTINATION ${CMAKE_BINARY_DIR})
+install(TARGETS space DESTINATION ${CMAKE_BINARY_DIR})

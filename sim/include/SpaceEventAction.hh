@@ -1,10 +1,10 @@
-#ifndef LaserEventAction_h
-#define LaserEventAction_h 1
+#ifndef SpaceEventAction_h
+#define SpaceEventAction_h 1
 ////////////////////////
 // My
 #include "G4UserEventAction.hh"
-#include "LaserActionManager.hh"
-#include "LaserRunAction.hh"
+#include "SpaceActionManager.hh"
+#include "SpaceRunAction.hh"
 #include "globals.hh"
 // C++
 #include "G4AccumulableManager.hh"
@@ -14,8 +14,8 @@
 #include "G4String.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4WorkerThread.hh"
-#include "LaserAnalysis.hh"
-#include "LaserRun.hh"
+#include "SpaceAnalysis.hh"
+#include "SpaceRun.hh"
 #include <array>
 #include <numeric>
 #include <set>
@@ -23,15 +23,15 @@
 
 // EventAction.hh
 
-class LaserEventAction : public G4UserEventAction {
+class SpaceEventAction : public G4UserEventAction {
 private:
   // data members
   G4int fdetHCID;
-  LaserActionManager *fActionManager; // Add this line
+  SpaceActionManager *fActionManager; // Add this line
 
 public:
-  LaserEventAction(LaserActionManager *manager); // constructor
-  virtual ~LaserEventAction();
+  SpaceEventAction(SpaceActionManager *manager); // constructor
+  virtual ~SpaceEventAction();
 
   virtual void BeginOfEventAction(const G4Event *event);
   virtual void EndOfEventAction(const G4Event *event);

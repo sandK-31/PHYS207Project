@@ -1,6 +1,6 @@
 //
-#ifndef LaserRunAction_h
-#define LaserRunAction_h 1
+#ifndef SpaceRunAction_h
+#define SpaceRunAction_h 1
 
 #include "G4Accumulable.hh"
 #include "G4ThreeVector.hh"
@@ -15,11 +15,11 @@
 
 #include <mutex>
 
-#include "LaserAnalysis.hh"
-#include "LaserDetectorConstruction.hh"
-#include "LaserEventAction.hh"
-#include "LaserPrimaryGeneratorAction.hh"
-#include "LaserRun.hh"
+#include "SpaceAnalysis.hh"
+#include "SpaceDetectorConstruction.hh"
+#include "SpaceEventAction.hh"
+#include "SpacePrimaryGeneratorAction.hh"
+#include "SpaceRun.hh"
 // Geant
 #include "G4AccumulableManager.hh"
 #include "G4LogicalVolume.hh"
@@ -40,23 +40,23 @@
 using namespace std;
 
 class G4Run;
-class LaserRun;
+class SpaceRun;
 class G4LogicalVolume;
-class LaserEventAction;
+class SpaceEventAction;
 
 /// Run action class
 
-class LaserRunAction : public G4UserRunAction {
+class SpaceRunAction : public G4UserRunAction {
 public:
-  LaserRunAction(LaserEventAction *eventAction, G4String n, G4int f, long s1,
+  SpaceRunAction(SpaceEventAction *eventAction, G4String n, G4int f, long s1,
                  long s2, std::string sContent, std::string mContent);
-  ~LaserRunAction();
+  ~SpaceRunAction();
 
   virtual void BeginOfRunAction(const G4Run *);
   virtual void EndOfRunAction(const G4Run *);
 
 private:
-  LaserEventAction *fEventAction = nullptr;
+  SpaceEventAction *fEventAction = nullptr;
   G4int fileNumber;
   G4String fileName;
   G4int seed1;

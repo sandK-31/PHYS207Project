@@ -4,4 +4,4 @@
 export PATH="@CMAKE_BINARY_DIR@:$PATH"
 
 echo "Added @CMAKE_BINARY_DIR@ to PATH"
-echo "You can now run: laser"
+echo "You can now run: space"

@@ -1,16 +1,16 @@
-#include "LaserEventAction.hh"
+#include "SpaceEventAction.hh"
 
-LaserEventAction::LaserEventAction(LaserActionManager *manager)
+SpaceEventAction::SpaceEventAction(SpaceActionManager *manager)
     : G4UserEventAction(), fdetHCID(-1), fActionManager(manager) {}
 
-LaserEventAction::~LaserEventAction() {
+SpaceEventAction::~SpaceEventAction() {
   G4cout << "Deleting EventAction";
   G4cout << "...done" << G4endl;
 }
 
-void LaserEventAction::BeginOfEventAction(const G4Event *event) {}
+void SpaceEventAction::BeginOfEventAction(const G4Event *event) {}
 
-void LaserEventAction::EndOfEventAction(const G4Event *event) {
+void SpaceEventAction::EndOfEventAction(const G4Event *event) {
 
   G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
 

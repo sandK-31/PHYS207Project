@@ -1,8 +1,8 @@
-#include "LaserPhysicsList.hh"
+#include "SpacePhysicsList.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-LaserPhysicsList::LaserPhysicsList() : G4VModularPhysicsList() {
+SpacePhysicsList::SpacePhysicsList() : G4VModularPhysicsList() {
   G4int verb = 2;
   SetVerboseLevel(verb);
 
@@ -28,20 +28,31 @@ LaserPhysicsList::LaserPhysicsList() : G4VModularPhysicsList() {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-LaserPhysicsList::~LaserPhysicsList() {}
+SpacePhysicsList::~SpacePhysicsList() {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void LaserPhysicsList::ConstructParticle() {
+void SpacePhysicsList::ConstructParticle() {
   G4VModularPhysicsList::ConstructParticle();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void LaserPhysicsList::ConstructProcess() {
+void SpacePhysicsList::ConstructProcess() {
   G4VModularPhysicsList::ConstructProcess();
+  // Create the step limiter process
+  G4StepLimiter *stepLimiter = new G4StepLimiter();
+
+  // Get the process manager for your specific particle
+  // (Change "G4OpticalPhoton" to whatever particle you are using for the radio
+  // waves)
+  G4ProcessManager *pmanager =
+      G4OpticalPhoton::OpticalPhoton()->GetProcessManager();
+
+  // Add the step limiter to the particle's physics processes
+  pmanager->AddDiscreteProcess(stepLimiter);
 }
 
-void LaserPhysicsList::SetCuts() {}
+void SpacePhysicsList::SetCuts() {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

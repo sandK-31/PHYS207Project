@@ -1,7 +1,7 @@
 //
 
-#ifndef LaserAnalysis_h
-#define LaserAnalysis_h 1
+#ifndef SpaceAnalysis_h
+#define SpaceAnalysis_h 1
 
 // #include "g4root.hh"
 #include <G4AnalysisManager.hh>

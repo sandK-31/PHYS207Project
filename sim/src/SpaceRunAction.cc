@@ -1,6 +1,6 @@
 //////////
 // My
-#include "LaserRunAction.hh"
+#include "SpaceRunAction.hh"
 
 // namespace
 using std::lock_guard;
@@ -8,7 +8,7 @@ using std::mutex;
 
 mutex fileMutex;
 
-LaserRunAction::LaserRunAction(LaserEventAction *eventAction, G4String n,
+SpaceRunAction::SpaceRunAction(SpaceEventAction *eventAction, G4String n,
                                G4int f, long s1, long s2, std::string sContent,
                                std::string mContent)
     : fEventAction(eventAction) {
@@ -51,9 +51,9 @@ LaserRunAction::LaserRunAction(LaserEventAction *eventAction, G4String n,
   G4cout << "Done " << analysisManager->GetType() << G4endl;
 }
 
-LaserRunAction::~LaserRunAction() {}
+SpaceRunAction::~SpaceRunAction() {}
 
-void LaserRunAction::BeginOfRunAction(const G4Run *aRun) {
+void SpaceRunAction::BeginOfRunAction(const G4Run *aRun) {
   G4String generatefilename;
   G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
   if (fileName == "") {
@@ -82,7 +82,7 @@ void LaserRunAction::BeginOfRunAction(const G4Run *aRun) {
   }
 }
 
-void LaserRunAction::EndOfRunAction(const G4Run *aRun) {
+void SpaceRunAction::EndOfRunAction(const G4Run *aRun) {
   auto analysisManager = G4AnalysisManager::Instance();
   if (IsMaster()) {
     G4cout << "-------Master-------\n"

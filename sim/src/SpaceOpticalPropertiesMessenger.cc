@@ -1,6 +1,6 @@
-#include "LaserOpticalPropertiesMessenger.hh"
+#include "SpaceOpticalPropertiesMessenger.hh"
 
-LaserOpticalPropertiesMessenger::LaserOpticalPropertiesMessenger() {
+SpaceOpticalPropertiesMessenger::SpaceOpticalPropertiesMessenger() {
 
   fMessenger =
       new G4GenericMessenger(this, "/opticprops/", "Optical Properties");
@@ -26,9 +26,9 @@ LaserOpticalPropertiesMessenger::LaserOpticalPropertiesMessenger() {
                               "Intralipid Mie FBRatioG");
 }
 
-LaserOpticalPropertiesMessenger::~LaserOpticalPropertiesMessenger() {}
+SpaceOpticalPropertiesMessenger::~SpaceOpticalPropertiesMessenger() {}
 
-void LaserOpticalPropertiesMessenger::OpticsUpdate() {
+void SpaceOpticalPropertiesMessenger::OpticsUpdate() {
   if (intralipidMieScatlengthHolder == 0.0 and
       intralipidRayleighScatlengthHolder == 0.0) {
     throw std::invalid_argument(

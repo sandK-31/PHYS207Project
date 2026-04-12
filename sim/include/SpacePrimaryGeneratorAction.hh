@@ -1,5 +1,5 @@
-#ifndef LaserPrimaryGeneratorAction_h
-#define LaserPrimaryGeneratorAction_h 1
+#ifndef SpacePrimaryGeneratorAction_h
+#define SpacePrimaryGeneratorAction_h 1
 
 #include "G4DataVector.hh"
 #include "G4ThreeVector.hh"
@@ -11,7 +11,7 @@
 #include "G4ParticleGun.hh"
 #include "globals.hh"
 
-#include "LaserRunAction.hh"
+#include "SpaceRunAction.hh"
 
 #include "G4AutoLock.hh"
 #include "G4BosonConstructor.hh"
@@ -28,17 +28,17 @@
 #include "G4ThreeVector.hh"
 #include "TRandom3.h"
 
-#include "LaserParticleGunMessenger.hh"
 #include "Randomize.hh"
+#include "SpaceParticleGunMessenger.hh"
 class G4Event;
 class G4ParticleGun;
 class G4Box;
-class LaserParticleGunMessenger;
+class SpaceParticleGunMessenger;
 
-class LaserPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
+class SpacePrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
 public:
-  LaserPrimaryGeneratorAction(LaserParticleGunMessenger *gunProps);
-  virtual ~LaserPrimaryGeneratorAction();
+  SpacePrimaryGeneratorAction(SpaceParticleGunMessenger *gunProps);
+  virtual ~SpacePrimaryGeneratorAction();
 
   virtual void GeneratePrimaries(G4Event *anEvent);
   const G4ParticleGun *GetParticleGun() const { return fParticleGun; }
@@ -54,7 +54,7 @@ private:
 
   double angle; // degrees
   double surfaceLevel;
-  double hypotenuse; // Hypotenuse of the triangle formed by the laser beam
+  double hypotenuse; // Hypotenuse of the triangle formed by the space beam
 
   float yPos;
   float zPos;

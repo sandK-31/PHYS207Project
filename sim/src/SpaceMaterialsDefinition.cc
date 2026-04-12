@@ -1,47 +1,28 @@
-#include "LaserMaterialsDefinition.hh"
+#include "SpaceMaterialsDefinition.hh"
 
 #define _tostr(a) #a
 #define tostr(a) _tostr(a)
 
-LaserMaterialsDefinition::LaserMaterialsDefinition(
-    LaserOpticalPropertiesMessenger *input) {
+SpaceMaterialsDefinition::SpaceMaterialsDefinition(
+    SpaceOpticalPropertiesMessenger *input) {
   manager = G4NistManager::Instance();
   // materials
-  matAir = manager->FindOrBuildMaterial("G4_AIR");
-  matAl = manager->FindOrBuildMaterial("G4_Al");
   matWater = manager->FindOrBuildMaterial("G4_He");
-  matVac = manager->FindOrBuildMaterial("G4_Galactic");
-  matGlass = manager->FindOrBuildMaterial("G4_Pyrex_Glass");
+  matAir = manager->FindOrBuildMaterial("G4_AIR");
 
   optics = input;
   DefineMaterials();
 
 } // END of constructor
 
-LaserMaterialsDefinition::~LaserMaterialsDefinition() {
+SpaceMaterialsDefinition::~SpaceMaterialsDefinition() {
 
   G4cout << "Deleting MaterialsDefinition...";
 
   G4cout << "done" << G4endl;
 }
 
-void LaserMaterialsDefinition::CreateBorderSurface(
-    G4String name, G4OpticalSurfaceModel model, G4SurfaceType type,
-    G4OpticalSurfaceFinish finish, G4VPhysicalVolume *logic1,
-    G4VPhysicalVolume *logic2) {
-  G4OpticalSurface *opticalSurface = new G4OpticalSurface(name);
-  opticalSurface->SetType(type);
-  opticalSurface->SetFinish(finish);
-  opticalSurface->SetModel(model);
-
-  G4LogicalBorderSurface *logic =
-      new G4LogicalBorderSurface(name, logic1, logic2, opticalSurface);
-  G4cout << "Created border surface: " << name << " between "
-         << logic1->GetName() << " and " << logic2->GetName() << G4endl;
-  return;
-}
-
-void LaserMaterialsDefinition::DefineMaterials() {
+void SpaceMaterialsDefinition::DefineMaterials() {
   G4double density;
   G4int ncomponents, natoms;
   optics->OpticsUpdate();
@@ -116,17 +97,5 @@ void LaserMaterialsDefinition::DefineMaterials() {
            << G4endl;
   }
 
-  /*
-  G40pticalSurface* waterAirSurface = new G40pticalSurface("WaterAirSurface");
-  waterAirSurface->SetType(dielectric_dielectric);
-  waterAirSurface->SetModel(unified); waterAirSurface->SetFinish(polished);
-  */
-
   matWater->SetMaterialPropertiesTable(waterMPT);
-  ///////////////////
-
-  G4MaterialPropertiesTable *GlassMPT = new G4MaterialPropertiesTable();
-  G4double GlassRefractionIndex[nEntries] = {1.47, 1.47};
-  GlassMPT->AddProperty("RINDEX", PhotonEnergy, GlassRefractionIndex, nEntries);
-  matGlass->SetMaterialPropertiesTable(GlassMPT);
 }

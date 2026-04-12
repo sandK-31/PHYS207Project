@@ -1,18 +1,18 @@
-#ifndef LaserOpticalPropertiesMessenger_h
-#define LaserOpticalPropertiesMessenger_h 1
+#ifndef SpaceOpticalPropertiesMessenger_h
+#define SpaceOpticalPropertiesMessenger_h 1
 
 #include "G4GenericMessenger.hh"
 #include "G4Material.hh"
-#include "LaserMaterialsDefinition.hh"
+#include "SpaceMaterialsDefinition.hh"
 #include "globals.hh"
 #include <iostream>
 #include <string>
 #include <vector>
 
-class LaserOpticalPropertiesMessenger {
+class SpaceOpticalPropertiesMessenger {
 public:
-  LaserOpticalPropertiesMessenger();
-  ~LaserOpticalPropertiesMessenger();
+  SpaceOpticalPropertiesMessenger();
+  ~SpaceOpticalPropertiesMessenger();
   inline G4double GetIntralipidRayleighScatlength() {
     return intralipidRayleighScatlength;
   };

@@ -1,12 +1,12 @@
-#ifndef LaserDetectorSD_h
-#define LaserDetectorSD_h 1
+#ifndef SpaceDetectorSD_h
+#define SpaceDetectorSD_h 1
 
 #include "G4VSensitiveDetector.hh"
 // #include "TotalHit.hh"
-#include "LaserAnalysis.hh"
-#include "LaserEventAction.hh"
-#include "LaserRun.hh"
-#include "LaserRunAction.hh"
+#include "SpaceAnalysis.hh"
+#include "SpaceEventAction.hh"
+#include "SpaceRun.hh"
+#include "SpaceRunAction.hh"
 // Geant
 #include "G4AccumulableManager.hh"
 #include "G4HadronicProcess.hh"
@@ -29,10 +29,10 @@ class G4TouchableHistory;
 
 /// Hodoscope sensitive detector
 
-class LaserDetectorSD : public G4VSensitiveDetector {
+class SpaceDetectorSD : public G4VSensitiveDetector {
 public:
-  LaserDetectorSD(G4String name);
-  virtual ~LaserDetectorSD();
+  SpaceDetectorSD(G4String name);
+  virtual ~SpaceDetectorSD();
   // This is called by RunManager at the beginning of each event. Here we can
   // clear out variables for counters and accumulators
   virtual void Initialize(/*G4HCofThisEvent *HCE*/);

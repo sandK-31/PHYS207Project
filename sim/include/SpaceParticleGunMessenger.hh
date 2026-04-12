@@ -1,15 +1,15 @@
-#ifndef LaserParticleGunMessenger_h
-#define LaserParticleGunMessenger_h 1
+#ifndef SpaceParticleGunMessenger_h
+#define SpaceParticleGunMessenger_h 1
 
 #include "G4GenericMessenger.hh"
 #include <iostream>
 #include <string>
 #include <vector>
 
-class LaserParticleGunMessenger {
+class SpaceParticleGunMessenger {
 public:
-  LaserParticleGunMessenger();
-  ~LaserParticleGunMessenger();
+  SpaceParticleGunMessenger();
+  ~SpaceParticleGunMessenger();
 
   inline G4double GetParticleGunAngle() { return Angle; };
   inline G4double GetPolarizationX() { return PolX; };

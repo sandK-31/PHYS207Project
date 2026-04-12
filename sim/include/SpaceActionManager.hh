@@ -1,13 +1,13 @@
 // ActionManager.hh
-#ifndef LaserACTIONMANAGER_h
-#define LaserACTIONMANAGER_h 1
+#ifndef SpaceACTIONMANAGER_h
+#define SpaceACTIONMANAGER_h 1
 
 #include "globals.hh"
 
-class LaserActionManager {
+class SpaceActionManager {
 public:
-  LaserActionManager();
-  ~LaserActionManager();
+  SpaceActionManager();
+  ~SpaceActionManager();
 
   void Reset();
   void AddToPathLength(G4double length);

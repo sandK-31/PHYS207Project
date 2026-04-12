@@ -1,6 +1,6 @@
-#include "LaserParticleGunMessenger.hh"
+#include "SpaceParticleGunMessenger.hh"
 
-LaserParticleGunMessenger::LaserParticleGunMessenger() {
+SpaceParticleGunMessenger::SpaceParticleGunMessenger() {
 
   fMessenger =
       new G4GenericMessenger(this, "/generator/", "Particle Gun Properties");
@@ -15,9 +15,9 @@ LaserParticleGunMessenger::LaserParticleGunMessenger() {
   fMessenger->DeclareProperty("Wavelength", fWave, "Photon Wavelength in nm");
 }
 
-LaserParticleGunMessenger::~LaserParticleGunMessenger() {}
+SpaceParticleGunMessenger::~SpaceParticleGunMessenger() {}
 
-void LaserParticleGunMessenger::GunUpdate() {
+void SpaceParticleGunMessenger::GunUpdate() {
   if (fAngle == -9999) {
     throw std::invalid_argument("No Angle Provided ParticleGunMessenger");
   } else {

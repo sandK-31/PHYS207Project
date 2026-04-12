@@ -1,17 +1,20 @@
-#ifndef LaserSteppingAction_h
-#define LaserSteppingAction_h 1
+#ifndef SpaceSteppingAction_h
+#define SpaceSteppingAction_h 1
 
 #include "G4SteppingManager.hh"
 #include "G4UserSteppingAction.hh"
-#include "LaserActionManager.hh"
-#include "LaserDetectorConstruction.hh"
-#include "LaserEventAction.hh"
-#include "LaserPrimaryGeneratorAction.hh"
+#include "SpaceActionManager.hh"
+#include "SpaceDetectorConstruction.hh"
+#include "SpaceEventAction.hh"
+#include "SpacePrimaryGeneratorAction.hh"
 #include "globals.hh"
 #include <array>
 #include <iostream>
 #include <set>
 #include <vector>
+
+#include "G4SystemOfUnits.hh"
+#include "G4UnitsTable.hh"
 
 #include "G4AccumulableManager.hh"
 #include "G4DynamicParticle.hh"
@@ -28,9 +31,9 @@
 #include "G4VProcess.hh"
 #include "G4VSolid.hh"
 #include "G4ios.hh"
-#include "LaserActionManager.hh"
-#include "LaserAnalysis.hh"
-#include "LaserRunAction.hh"
+#include "SpaceActionManager.hh"
+#include "SpaceAnalysis.hh"
+#include "SpaceRunAction.hh"
 #include <G4String.hh>
 #include <G4VProcess.hh>
 #include <G4VSteppingVerbose.hh>
@@ -47,10 +50,10 @@ class G4LogicalVolume;
 /// Stepping action.hh
 ///
 
-class LaserSteppingAction : public G4UserSteppingAction {
+class SpaceSteppingAction : public G4UserSteppingAction {
 public:
-  LaserSteppingAction(LaserActionManager *manager); // constructor
-  virtual ~LaserSteppingAction();
+  SpaceSteppingAction(SpaceActionManager *manager); // constructor
+  virtual ~SpaceSteppingAction();
 
   // method from the base class
   virtual void UserSteppingAction(const G4Step *);
@@ -58,7 +61,7 @@ public:
   int polCount = 0;
 
 private:
-  LaserActionManager *fActionManager;
+  SpaceActionManager *fActionManager;
   std::set<G4int> eventIDList;
 
   struct stepInfo {

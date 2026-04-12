@@ -6,12 +6,12 @@
 // package includes
 //
 #include "G4RunManager.hh"
-#include "LaserDetectorConstruction.hh"
-#include "LaserPhysicsList.hh"
-#include "LaserPrimaryGeneratorAction.hh"
+#include "SpaceDetectorConstruction.hh"
+#include "SpacePhysicsList.hh"
+#include "SpacePrimaryGeneratorAction.hh"
 // #include "PrimaryGeneratorActionGPS.hh"
-#include "LaserActionInitialization.hh"
-#include "LaserParticleGunMessenger.hh"
+#include "SpaceActionInitialization.hh"
+#include "SpaceParticleGunMessenger.hh"
 // geant4 includes
 #include "G4RunManagerFactory.hh"
 #include "G4UIExecutive.hh"
@@ -49,7 +49,7 @@ void help();
 namespace {
 void PrintUsage() {
   G4cerr << " Usage: " << G4endl;
-  G4cerr << " laser [-r macro ] [-u UIsession] [-t nThreads] [-s SpecMacro]"
+  G4cerr << " space [-r macro ] [-u UIsession] [-t nThreads] [-s SpecMacro]"
          << G4endl;
   G4cerr << " [-a RandSeed1] [-b RandSeed2] [-o fileName] [-n fileNumber]"
          << G4endl;
@@ -131,9 +131,8 @@ int main(int argc, char **argv) {
   // Set mandatory initialization classes
   // Detector construction
 
-  auto opProps = new LaserOpticalPropertiesMessenger();
-  auto surf = new LaserOpticalSurfaceMessenger();
-  auto gunProps = new LaserParticleGunMessenger();
+  auto opProps = new SpaceOpticalPropertiesMessenger();
+  auto gunProps = new SpaceParticleGunMessenger();
   G4UImanager *UImanager = G4UImanager::GetUIpointer();
   G4UImanager::GetUIpointer()->ApplyCommand("/tracking/verbose 0");
 
@@ -172,17 +171,17 @@ int main(int argc, char **argv) {
   }
 
   //////////////////////
-  auto dc = new LaserDetectorConstruction(opProps, surf);
+  auto dc = new SpaceDetectorConstruction(opProps);
 
   runManager->SetUserInitialization(dc);
   // Physics list
 
-  LaserPhysicsList *physicsList = new LaserPhysicsList();
+  SpacePhysicsList *physicsList = new SpacePhysicsList();
   runManager->SetUserInitialization(physicsList);
   // User action initialization
 
   runManager->SetUserInitialization(
-      new LaserActionInitialization(fileName, fileNumber, seeds[0], seeds[1],
+      new SpaceActionInitialization(fileName, fileNumber, seeds[0], seeds[1],
                                     gunProps, macroContent, specContent));
 
   runManager->Initialize();

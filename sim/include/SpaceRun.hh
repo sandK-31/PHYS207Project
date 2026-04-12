@@ -1,5 +1,5 @@
-#ifndef LaserRun_h
-#define LaserRun_h 1
+#ifndef SpaceRun_h
+#define SpaceRun_h 1
 
 #include "G4AutoLock.hh"
 #include "G4Run.hh"
@@ -9,10 +9,10 @@
 
 class G4Event;
 
-class LaserRun : public G4Run {
+class SpaceRun : public G4Run {
 public:
-  LaserRun();
-  virtual ~LaserRun();
+  SpaceRun();
+  virtual ~SpaceRun();
   virtual void RecordEvent(const G4Event *);
   virtual void Merge(const G4Run *);
 

@@ -1,11 +1,11 @@
-#include "LaserPrimaryGeneratorAction.hh"
+#include "SpacePrimaryGeneratorAction.hh"
 
 namespace {
 G4Mutex myHEPPrimGenMutex = G4MUTEX_INITIALIZER;
 }
 
-LaserPrimaryGeneratorAction::LaserPrimaryGeneratorAction(
-    LaserParticleGunMessenger *gunProps)
+SpacePrimaryGeneratorAction::SpacePrimaryGeneratorAction(
+    SpaceParticleGunMessenger *gunProps)
     : G4VUserPrimaryGeneratorAction(), fParticleGun(nullptr),
       randGen(new TRandom3(0)) {
   gunProps->GunUpdate(); // Update the gun properties from the messenger
@@ -44,13 +44,13 @@ LaserPrimaryGeneratorAction::LaserPrimaryGeneratorAction(
   */
 }
 
-LaserPrimaryGeneratorAction::~LaserPrimaryGeneratorAction() {
+SpacePrimaryGeneratorAction::~SpacePrimaryGeneratorAction() {
   delete fParticleGun;
 }
 
-void LaserPrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent) {
+void SpacePrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent) {
 
-  // Making gaussian laser pulse for MILK
+  // Making gaussian space pulse for MILK
   double sigma =
       4.04 * 0.07486029798533422 * mm; // Standard deviation of Gaussian profile
 

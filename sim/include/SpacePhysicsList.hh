@@ -1,5 +1,5 @@
-#ifndef LaserPhysicsList_h
-#define LaserPhysicsList_h 1
+#ifndef SpacePhysicsList_h
+#define SpacePhysicsList_h 1
 
 #include "G4VModularPhysicsList.hh"
 #include "globals.hh"
@@ -12,6 +12,9 @@
 
 #include "G4HadronElasticPhysicsHP.hh"
 #include "G4HadronElasticPhysicsXS.hh"
+
+#include "G4ProcessManager.hh"
+#include "G4StepLimiter.hh"
 
 #include "G4HadronInelasticQBBC.hh"
 #include "G4HadronPhysicsFTFP_BERT_HP.hh"
@@ -43,10 +46,10 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class LaserPhysicsList : public G4VModularPhysicsList {
+class SpacePhysicsList : public G4VModularPhysicsList {
 public:
-  LaserPhysicsList();
-  ~LaserPhysicsList();
+  SpacePhysicsList();
+  ~SpacePhysicsList();
 
 public:
   virtual void ConstructParticle();

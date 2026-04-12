@@ -1,26 +1,25 @@
-#ifndef LaserDetectorConstruction_H
-#define LaserDetectorConstruction_H 1
+#ifndef SpaceDetectorConstruction_H
+#define SpaceDetectorConstruction_H 1
 
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 class G4VSensitiveDetector;
 class G4VisAttributes;
 class G4Material;
-class LaserOpticalPropertiesMessenger;
-class LaserOpticalSurfaceMessenger;
+class SpaceOpticalPropertiesMessenger;
 
-#include "LaserDetectorSD.hh"
+#include "SpaceDetectorSD.hh"
 
 #include "G4GenericMessenger.hh"
 #include "G4PVPlacement.hh"
 #include "G4VUserDetectorConstruction.hh"
-#include "LaserMaterialsDefinition.hh"
+#include "SpaceMaterialsDefinition.hh"
 #include "globals.hh"
 
 #include <vector>
 
-#include "LaserDetectorSD.hh"
-#include "LaserMaterialsDefinition.hh"
+#include "SpaceDetectorSD.hh"
+#include "SpaceMaterialsDefinition.hh"
 
 #include "G4Box.hh"
 #include "G4Cons.hh"
@@ -51,12 +50,12 @@ class LaserOpticalSurfaceMessenger;
 #include "G4SolidStore.hh"
 #include "G4SubtractionSolid.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4UserLimits.hh"
 #include "G4VSensitiveDetector.hh"
 #include "G4VisAttributes.hh"
 #include "G4ios.hh"
 
 #include "G4MTRunManager.hh"
-#include "LaserOpticalSurfaceMessenger.hh"
 
 #include "G4UImanager.hh"
 #include "G4VVisManager.hh"
@@ -71,44 +70,22 @@ class G4LogicalVolume;
 class G4Material;
 class G4GenericMessenger;
 
-class LaserDetectorConstruction : public G4VUserDetectorConstruction {
+class SpaceDetectorConstruction : public G4VUserDetectorConstruction {
 public:
-  LaserDetectorConstruction(LaserOpticalPropertiesMessenger *props,
-                            LaserOpticalSurfaceMessenger *surf);
-  ~LaserDetectorConstruction();
+  SpaceDetectorConstruction(SpaceOpticalPropertiesMessenger *props);
+  ~SpaceDetectorConstruction();
   G4VPhysicalVolume *Construct();
-  LaserMaterialsDefinition *matDef;
-  LaserOpticalSurfaceMessenger *surface;
-
-  // LaserDetectorSD* fiberSD;
+  SpaceMaterialsDefinition *matDef;
 
 private:
-  void BuildWorld();
-  void BuildBeaker();
-  void BuildInnerHollow();
-  void BuildLiquid();
-  void BuildDetectorAir();
-  void MakeOpticalSurfaces();
+  void BuildCloud();
 
-  G4VPhysicalVolume *worldVol_physV;
-  G4VPhysicalVolume *beaker_physV;
-  G4VPhysicalVolume *innerHollow_physV;
-  G4VPhysicalVolume *liquid_physV;
-  G4VPhysicalVolume *detector_physV;
+  G4VPhysicalVolume *cloud_physV;
 
   G4Material *air;
-  G4Material *glass;
-  G4Material *WbLS;
-  G4Material *water;
 
-  G4LogicalVolume *worldLogical;
-  G4LogicalVolume *outerBeakerLog;
-  G4LogicalVolume *innerHollowLog;
+  G4LogicalVolume *cloud_logical;
 
-  G4PVPlacement *testPV;
-  G4double worldSizeX;
-  G4double worldSizeY;
-  G4double worldSizeZ;
   G4bool checkOverlaps;
 
 protected:
