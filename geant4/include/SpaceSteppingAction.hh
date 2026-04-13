@@ -9,11 +9,16 @@
 #include "SpacePrimaryGeneratorAction.hh"
 #include "globals.hh"
 #include <array>
+#include <cmath>
 #include <iostream>
 #include <set>
 #include <vector>
 
+#include "G4RandomDirection.hh"
+#include "Randomize.hh"
+
 #include "G4SystemOfUnits.hh"
+#include "G4ThreeVector.hh"
 #include "G4UnitsTable.hh"
 
 #include "G4AccumulableManager.hh"
@@ -52,6 +57,11 @@ class G4LogicalVolume;
 
 class SpaceSteppingAction : public G4UserSteppingAction {
 public:
+  // Define a struct to hold our two lengths
+  struct OpticalLengths {
+    G4double absorptionLength;
+    G4double scatteringLength;
+  };
   SpaceSteppingAction(SpaceActionManager *manager); // constructor
   virtual ~SpaceSteppingAction();
 
@@ -61,6 +71,8 @@ public:
   int polCount = 0;
 
 private:
+  OpticalLengths GetOpticalLengthsAtPosition(G4ThreeVector position);
+
   SpaceActionManager *fActionManager;
   std::set<G4int> eventIDList;
 

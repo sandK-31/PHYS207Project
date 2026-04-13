@@ -8,7 +8,6 @@
 #include "vector"
 #include <cmath>
 
-#include "G4ParticleGun.hh"
 #include "globals.hh"
 
 #include "SpaceRunAction.hh"
@@ -29,15 +28,13 @@
 #include "TRandom3.h"
 
 #include "Randomize.hh"
-#include "SpaceParticleGunMessenger.hh"
 class G4Event;
 class G4ParticleGun;
 class G4Box;
-class SpaceParticleGunMessenger;
 
 class SpacePrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
 public:
-  SpacePrimaryGeneratorAction(SpaceParticleGunMessenger *gunProps);
+  SpacePrimaryGeneratorAction();
   virtual ~SpacePrimaryGeneratorAction();
 
   virtual void GeneratePrimaries(G4Event *anEvent);

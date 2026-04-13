@@ -1,65 +1,58 @@
-//////////
-// My
 #include "SpaceRunAction.hh"
 
-// namespace
-using std::lock_guard;
-using std::mutex;
+#include "G4AnalysisManager.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4Threading.hh"
+#include "G4UIcommand.hh"
 
-mutex fileMutex;
-
-SpaceRunAction::SpaceRunAction(SpaceEventAction *eventAction, G4String n,
-                               G4int f, long s1, long s2, std::string sContent,
-                               std::string mContent)
-    : fEventAction(eventAction) {
-  fileName = n;
-  fileNumber = f;
-  seed1 = s1, seed2 = s2;
-  specContent = sContent;
-  macroContent = mContent;
+SpaceRunAction::SpaceRunAction(G4String n, G4int f, long s1, long s2,
+                               std::string sContent, std::string mContent)
+    : fileName(n), fileNumber(f), seed1(s1), seed2(s2), specContent(sContent),
+      macroContent(mContent) {
   auto analysisManager = G4AnalysisManager::Instance();
   G4cout << "Using " << analysisManager->GetType() << G4endl;
 
   analysisManager->SetNtupleMerging(true);
   analysisManager->SetVerboseLevel(0);
 
-  analysisManager->CreateNtuple("Hits", "Hits");
+  // ---------- Histograms ----------
+  // Change these ranges to match your detector/world size.
+  analysisManager->CreateH2("scatter_xy", "Scatter distribution;X;Y", 200,
+                            -100., 100., 200, -100., 100.);
+
+  analysisManager->CreateH1("scatter_z", "Scatter Z distribution;Z;Counts", 200,
+                            -100., 100.);
+
+  // ---------- Ntuples ----------
+  analysisManager->CreateNtuple("Scatters", "Scatters");
   analysisManager->CreateNtupleDColumn("fX");
   analysisManager->CreateNtupleDColumn("fY");
-  analysisManager->CreateNtupleDColumn("time");
+  analysisManager->CreateNtupleDColumn("fZ");
   analysisManager->FinishNtuple();
-
-  // Create a separate ntuple for Seeds
 
   analysisManager->CreateNtuple("Seeds", "Seeds");
   analysisManager->CreateNtupleDColumn("Seed1");
   analysisManager->CreateNtupleDColumn("Seed2");
-  analysisManager->FinishNtuple(); // Second ntuple index: 1
+  analysisManager->FinishNtuple();
 
   analysisManager->CreateNtuple("Inputs", "Inputs");
   analysisManager->CreateNtupleSColumn("macro");
   analysisManager->CreateNtupleSColumn("spec");
   analysisManager->FinishNtuple();
 
-  analysisManager->CreateH2("PhotonSurfaceEmission",
-                            "Image of photon re-emission", 2000, -100, 100,
-                            2000, -100, 100); // hist number 0
-  analysisManager->SetH2XAxisTitle(0, "X pos (mm)");
-  analysisManager->SetH2YAxisTitle(0, "Y pos (mm)");
-  analysisManager->SetH2ZAxisTitle(0, "Counts");
-
   G4cout << "Done " << analysisManager->GetType() << G4endl;
 }
 
 SpaceRunAction::~SpaceRunAction() {}
 
-void SpaceRunAction::BeginOfRunAction(const G4Run *aRun) {
+void SpaceRunAction::BeginOfRunAction(const G4Run *) {
   G4String generatefilename;
-  G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
-  if (fileName == "") {
-    generatefilename += "lightBall";
+  auto *analysisManager = G4AnalysisManager::Instance();
+
+  if (fileName.empty()) {
+    generatefilename = "lightBall";
   } else {
-    generatefilename += fileName;
+    generatefilename = fileName;
   }
 
   if (fileNumber != -1) {
@@ -67,33 +60,32 @@ void SpaceRunAction::BeginOfRunAction(const G4Run *aRun) {
     generatefilename += G4UIcommand::ConvertToString(fileNumber);
   }
   generatefilename += ".root";
+
   analysisManager->OpenFile(generatefilename);
-  analysisManager->Reset();
 
-  G4int tid = G4Threading::G4GetThreadId();
-
-  if (tid == 0) {
-    analysisManager->FillNtupleDColumn(1, 0, seed1); // First seed
-    analysisManager->FillNtupleDColumn(1, 1, seed2); // Second seed
+  if (IsMaster()) {
+    analysisManager->FillNtupleDColumn(1, 0, static_cast<G4double>(seed1));
+    analysisManager->FillNtupleDColumn(1, 1, static_cast<G4double>(seed2));
     analysisManager->AddNtupleRow(1);
+
     analysisManager->FillNtupleSColumn(2, 0, macroContent);
     analysisManager->FillNtupleSColumn(2, 1, specContent);
     analysisManager->AddNtupleRow(2);
   }
 }
 
-void SpaceRunAction::EndOfRunAction(const G4Run *aRun) {
-  auto analysisManager = G4AnalysisManager::Instance();
+void SpaceRunAction::EndOfRunAction(const G4Run *) {
+  auto *analysisManager = G4AnalysisManager::Instance();
+
   if (IsMaster()) {
-    G4cout << "-------Master-------\n"
-           << "\n------- End of Global Run -------\n"
-           << endl;
-
+    G4cout << "------- Master -------\n"
+           << "------- End of Global Run -------\n"
+           << std::endl;
   } else {
-    G4cout << "\n------- End of Local Run -------\n";
+    G4cout << "------- End of Local Run -------\n";
   }
-  G4cout << "You are going to write the root file" << G4endl;
 
+  G4cout << "Writing ROOT file" << G4endl;
   analysisManager->Write();
   analysisManager->CloseFile();
 }

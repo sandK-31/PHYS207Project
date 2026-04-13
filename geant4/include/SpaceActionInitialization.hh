@@ -6,20 +6,17 @@
 #include "SpaceActionManager.hh"
 #include "SpaceDetectorSD.hh"
 #include "SpaceEventAction.hh"
-#include "SpaceParticleGunMessenger.hh"
 #include "SpacePrimaryGeneratorAction.hh"
 #include "SpaceRunAction.hh"
 #include "SpaceSteppingAction.hh"
 
 class DetectorConstruction;
-class SpaceParticleGunMessenger;
 
 /// Action initialization class.
 
 class SpaceActionInitialization : public G4VUserActionInitialization {
 public:
-  SpaceActionInitialization(G4String, G4int, long, long,
-                            SpaceParticleGunMessenger *gunProps, std::string,
+  SpaceActionInitialization(G4String, G4int, long, long, std::string,
                             std::string);
   virtual ~SpaceActionInitialization();
 
@@ -31,7 +28,6 @@ private:
   G4String fileName;
   G4int seed1;
   G4int seed2;
-  SpaceParticleGunMessenger *gunMessenger;
   std::string macroContent;
   std::string specContent;
 };

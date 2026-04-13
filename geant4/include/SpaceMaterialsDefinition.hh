@@ -31,6 +31,7 @@ public:
   ~SpaceMaterialsDefinition();
   inline G4Material *GetAir() { return matAir; };
   inline G4Material *GetWater() { return matWater; };
+  inline G4Material *GetVacuum() { return matVacuum; };
 
   SpaceOpticalPropertiesMessenger *optics;
   void DefineMaterials();
@@ -41,6 +42,7 @@ private:
   // materials for the world
   G4Material *matAir;
   G4Material *matWater;
+  G4Material *matVacuum;
 
 }; // END of class MaterialsDefinition
 

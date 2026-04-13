@@ -8,6 +8,7 @@ SpaceMaterialsDefinition::SpaceMaterialsDefinition(
   manager = G4NistManager::Instance();
   // materials
   matWater = manager->FindOrBuildMaterial("G4_He");
+  matVacuum = manager->FindOrBuildMaterial("G4_Galactic");
   matAir = manager->FindOrBuildMaterial("G4_AIR");
 
   optics = input;

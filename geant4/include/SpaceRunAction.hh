@@ -48,8 +48,8 @@ class SpaceEventAction;
 
 class SpaceRunAction : public G4UserRunAction {
 public:
-  SpaceRunAction(SpaceEventAction *eventAction, G4String n, G4int f, long s1,
-                 long s2, std::string sContent, std::string mContent);
+  SpaceRunAction(G4String n, G4int f, long s1, long s2, std::string sContent,
+                 std::string mContent);
   ~SpaceRunAction();
 
   virtual void BeginOfRunAction(const G4Run *);

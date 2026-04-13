@@ -8,11 +8,12 @@ SpaceDetectorSD::SpaceDetectorSD(G4String name) : G4VSensitiveDetector(name) {
 SpaceDetectorSD::~SpaceDetectorSD() {}
 
 G4bool SpaceDetectorSD::ProcessHits(G4Step *aStep, G4TouchableHistory *) {
+  (void)aStep;
   return true;
 }
 
-void SpaceDetectorSD::processReactionInfo(const G4Step *aStep) {}
+void SpaceDetectorSD::processReactionInfo(const G4Step *aStep) { (void)aStep; }
 
-void SpaceDetectorSD::Initialize() {}
+void SpaceDetectorSD::Initialize(G4HCofThisEvent *) {}
 
-void SpaceDetectorSD::EndOfEvent() {}
+void SpaceDetectorSD::EndOfEvent(G4HCofThisEvent *) {}

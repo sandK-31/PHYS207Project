@@ -16,6 +16,9 @@ public:
   G4double GetTotalPathLength() const;
   G4int GetRayleighCount() const;
 
+  void SetAbsorbed(G4bool absorbed);
+  G4bool WasAbsorbed() const;
+
   G4double fTotalPathLength;
   G4int fRayleighCount;
   G4bool fAbsorbed;

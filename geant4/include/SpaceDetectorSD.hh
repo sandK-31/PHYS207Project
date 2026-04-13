@@ -35,7 +35,8 @@ public:
   virtual ~SpaceDetectorSD();
   // This is called by RunManager at the beginning of each event. Here we can
   // clear out variables for counters and accumulators
-  virtual void Initialize(/*G4HCofThisEvent *HCE*/);
+  void Initialize(G4HCofThisEvent *) override;
+  void EndOfEvent(G4HCofThisEvent *) override;
 
   // This is called at each step of the particle crosssing the sensitive
   // detector. Allows access to all information about particle properties and
@@ -43,9 +44,6 @@ public:
   virtual G4bool ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist);
 
   void processReactionInfo(const G4Step *aStep);
-
-  // This is called at the end of an event
-  virtual void EndOfEvent(/*G4HCofThisEvent *HCE*/);
 
   void printInfo();
 
