@@ -2,3 +2,5 @@ build/
 /CMakeLists.txt/
 /.vscode
 /.DS_Store
+.claude
+*.egg-info
