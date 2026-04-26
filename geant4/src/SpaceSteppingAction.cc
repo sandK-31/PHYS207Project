@@ -87,6 +87,9 @@ void SpaceSteppingAction::UserSteppingAction(const G4Step *aStep) {
     analysisManager->FillNtupleDColumn(0, 0, position.x() / m);
     analysisManager->FillNtupleDColumn(0, 1, position.y() / m);
     analysisManager->FillNtupleDColumn(0, 2, position.z() / m);
+    G4int eventID =
+        G4EventManager::GetEventManager()->GetConstCurrentEvent()->GetEventID();
+    analysisManager->FillNtupleIColumn(0, 3, eventID);
     analysisManager->AddNtupleRow(0);
 
     // Histograms

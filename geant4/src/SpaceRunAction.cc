@@ -28,6 +28,7 @@ SpaceRunAction::SpaceRunAction(G4String n, G4int f, long s1, long s2,
   analysisManager->CreateNtupleDColumn("fX");
   analysisManager->CreateNtupleDColumn("fY");
   analysisManager->CreateNtupleDColumn("fZ");
+  analysisManager->CreateNtupleIColumn("event_id"); // ADD THIS
   analysisManager->FinishNtuple();
 
   analysisManager->CreateNtuple("Seeds", "Seeds");
