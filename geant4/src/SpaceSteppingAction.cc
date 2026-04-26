@@ -84,6 +84,9 @@ void SpaceSteppingAction::UserSteppingAction(const G4Step *aStep) {
     }
 
     auto *analysisManager = G4AnalysisManager::Instance();
+    //djkfhadlskjhdfsaklj
+
+
     analysisManager->FillNtupleDColumn(0, 0, position.x() / m);
     analysisManager->FillNtupleDColumn(0, 1, position.y() / m);
     analysisManager->FillNtupleDColumn(0, 2, position.z() / m);
